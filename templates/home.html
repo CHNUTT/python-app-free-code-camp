@@ -9,6 +9,11 @@
       body {
         font-family: Roboto;
       }
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+      }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,14 +29,16 @@
     />
   </head>
   <body>
-    <div>
-      <h1>Cheer Chokwittaya</h1>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Cheer Chokwittaya</h1>
       <img
+        id="banner"
+        class="img-fluid"
         src="../static/img/banner.jpg"
         alt="cool banner"
       />
-      <h2>About Cheer</h2>
-      <p>
+      <h2 class="text-center mt-2 mb-4">About Cheer</h2>
+      <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -40,9 +47,12 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-      <h2>Open Positions</h2>
-      <p>TODO - Show the jobs here</p>
-      <button>Contact Us</button>
+      <h2 class="text-center">Open Positions</h2>
+      <p class="">TODO - Show the jobs here</p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-4">Copyright 2023, Cheer</p>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
